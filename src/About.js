@@ -22,7 +22,7 @@ function CenteredGrid(props) {
 
   return (
     <div id="about" className={classes.root}>
-      <Grid container spacing={24}>
+      <Grid container spacing={32}>
         <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'LemonMilk', fontSize: 35, color: '#f47c7c'}}>
           ABOUT ME
         </Grid>
@@ -31,9 +31,11 @@ function CenteredGrid(props) {
         </Grid>
         <hr style= {{  border: 'none', height: 2, color: '#f47c7c', backgroundColor: '#f47c7c', width: 103 }}/>
         <Grid item xs={12} style={{textAlign: 'center'}}>
-          <img src={Profile}/>
+          <img src={Profile} style={{width: 140}}/>
         </Grid>
-        <Grid item xs={6} style={{fontFamily: 'Montserrat'}}>
+        <Grid  item xs={1}>
+        </Grid>
+        <Grid item xs={5} style={{fontFamily: 'Montserrat'}}>
           <p>
             My name is Heiðrún Björt and I come from Iceland. I live in
             my apartment in Hafnarfjörður with my man, Hrafnkell,
@@ -46,7 +48,7 @@ function CenteredGrid(props) {
             Sketch, Indesign, Photoshop, Illustrator, Invision and more.
           </p>
         </Grid>
-        <Grid item xs={6} style={{fontFamily: 'Montserrat'}}>
+        <Grid item xs={5} style={{fontFamily: 'Montserrat'}}>
           <p>
             I've worked at various places as a graphic media designer,
             at a media, advertisement agency and a small printing
@@ -60,11 +62,15 @@ function CenteredGrid(props) {
           </p>
         </Grid>
         <Grid item xs={12} style={{textAlign: 'center'}}>
-          <img src={Signature}/>
+          <img src={Signature} style={{width: 285}}/>
         </Grid>
-        <Grid item xs={12} style={{textAlign: 'center'}}>
-          <button>MY RESUME</button>
-          <button>HIRE ME</button>
+        <Grid container xs={12} style={{justifyContent: 'center'}}>
+          <Grid item xs={2} style={{margin: '0 15px'}}>
+            <button className="pink-button">MY RESUME</button>
+          </Grid>
+          <Grid item xs={2} style={{margin: '0 15px'}}>
+            <button className="red-button">HIRE ME</button>
+          </Grid>
         </Grid>
       </Grid>
     </div>

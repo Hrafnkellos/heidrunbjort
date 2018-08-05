@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 const styles = theme => ({
   root: {
     flexGrow: 1,
+    marginTop: 50,
   },
   paper: {
     padding: theme.spacing.unit * 2,
@@ -20,10 +21,10 @@ function CenteredGrid(props) {
   return (
     <div id="contact" className={classes.root}>
       <Grid container spacing={24}>
-        <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'LemonMilk', fontSize: 35}}>
+        <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'LemonMilk', fontSize: 35, color: '#f47c7c'}}>
           CONTACT ME
         </Grid>
-        <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'Tinos'}}>
+        <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'Tinos', fontSize: 20, color: '#838383', fontStyle: 'italic'}}>
           Feel free to ask me anything or even offer me a job
         </Grid>
         <Grid item xs={12} style={{textAlign: 'center'}}>

@@ -23,7 +23,7 @@ function HeidrunAppBar(props) {
     <div className={classes.root}>
       <AppBar position="static" className={classes.appBar}>
         <Toolbar>
-          <Typography variant="title" className="menu" color="inherit" style={{margin: '0 auto', fontSize: 15}}>
+          <Typography variant="title" className="menu" color="inherit" style={{margin: '0 auto', fontSize: 15, color: '#605f5f'}}>
             <a href="#work">WORK</a> // <a href="#about">ABOUT</a> // <a href="#contact">CONTACT</a>
           </Typography>
         </Toolbar>

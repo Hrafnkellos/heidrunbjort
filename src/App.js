@@ -45,7 +45,7 @@ class App extends Component {
         <MuiThemeProvider theme={theme}>
         <CssBaseline />
         <Header></Header>
-        <div style={{maxWidth: 1170, margin: '0 auto'}}>
+        <div style={{maxWidth: 1138, margin: '0 auto'}}>
           <FrontPage></FrontPage>
           <About></About>
           <MyWork></MyWork>
