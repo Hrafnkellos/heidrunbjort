@@ -21,9 +21,9 @@ function CenteredGrid(props) {
   const { classes } = props;
 
   return (
-    <div className={classes.root}>
+    <div id="about" className={classes.root}>
       <Grid container spacing={24}>
-        <Grid item xs={12} style={{textAlign: 'center'}}>
+        <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'LemonMilk'}}>
           ABOUT ME
         </Grid>
         <Grid item xs={12} style={{textAlign: 'center'}}>

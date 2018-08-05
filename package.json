@@ -8,7 +8,9 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4",
-    "typeface-roboto": "^0.0.54"
+    "typeface-montserrat": "^0.0.54",
+    "typeface-roboto": "^0.0.54",
+    "typeface-tinos": "^0.0.54"
   },
   "scripts": {
     "start": "react-scripts start",
