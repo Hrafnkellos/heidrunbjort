@@ -27,10 +27,10 @@ function CenteredGrid(props) {
   return (
     <div id="work" className={classes.root}>
       <Grid container spacing={24}>
-        <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'LemonMilk'}}>
+        <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'LemonMilk', fontSize: 35}}>
           MY WORK
         </Grid>
-        <Grid item xs={12} style={{textAlign: 'center'}}>
+        <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'Tinos'}}>
           Many different projects that I have worked on
         </Grid>
         <Grid item xs={4} style={{textAlign: 'center'}}>
@@ -41,6 +41,15 @@ function CenteredGrid(props) {
         </Grid>
         <Grid item xs={4} style={{textAlign: 'center'}}>
           <img src={Work3}/>
+        </Grid>
+        <Grid item xs={4} style={{textAlign: 'center'}}>
+          <img src={Work4}/>
+        </Grid>
+        <Grid item xs={4} style={{textAlign: 'center'}}>
+          <img src={Work5}/>
+        </Grid>
+        <Grid item xs={4} style={{textAlign: 'center'}}>
+          <img src={Work6}/>
         </Grid>
         <Grid item xs={12} style={{textAlign: 'center'}}>
           <button>MY DRIBBLE ACCOUNT</button>

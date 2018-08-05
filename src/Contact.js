@@ -20,10 +20,10 @@ function CenteredGrid(props) {
   return (
     <div id="contact" className={classes.root}>
       <Grid container spacing={24}>
-        <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'LemonMilk'}}>
+        <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'LemonMilk', fontSize: 35}}>
           CONTACT ME
         </Grid>
-        <Grid item xs={12} style={{textAlign: 'center'}}>
+        <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'Tinos'}}>
           Feel free to ask me anything or even offer me a job
         </Grid>
         <Grid item xs={12} style={{textAlign: 'center'}}>

@@ -23,16 +23,17 @@ function CenteredGrid(props) {
   return (
     <div id="about" className={classes.root}>
       <Grid container spacing={24}>
-        <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'LemonMilk'}}>
+        <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'LemonMilk', fontSize: 35, color: '#f47c7c'}}>
           ABOUT ME
         </Grid>
-        <Grid item xs={12} style={{textAlign: 'center'}}>
+        <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'Tinos', fontSize: 20, color: '#838383', fontStyle: 'italic'}}>
           My life, my career and education
         </Grid>
+        <hr style= {{  border: 'none', height: 2, color: '#f47c7c', backgroundColor: '#f47c7c', width: 103 }}/>
         <Grid item xs={12} style={{textAlign: 'center'}}>
           <img src={Profile}/>
         </Grid>
-        <Grid item xs={6} style={{}}>
+        <Grid item xs={6} style={{fontFamily: 'Montserrat'}}>
           <p>
             My name is Heiðrún Björt and I come from Iceland. I live in
             my apartment in Hafnarfjörður with my man, Hrafnkell,
@@ -45,7 +46,7 @@ function CenteredGrid(props) {
             Sketch, Indesign, Photoshop, Illustrator, Invision and more.
           </p>
         </Grid>
-        <Grid item xs={6} style={{}}>
+        <Grid item xs={6} style={{fontFamily: 'Montserrat'}}>
           <p>
             I've worked at various places as a graphic media designer,
             at a media, advertisement agency and a small printing
