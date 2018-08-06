@@ -29,7 +29,7 @@ function CenteredGrid(props) {
         <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'Tinos', fontSize: 20, color: '#838383', fontStyle: 'italic'}}>
           My life, my career and education
         </Grid>
-        <hr style= {{  border: 'none', height: 2, color: '#f47c7c', backgroundColor: '#f47c7c', width: 103 }}/>
+        <hr style= {{ border: 'none', height: 2, color: '#f47c7c', backgroundColor: '#f47c7c', width: 103 }}/>
         <Grid item xs={12} style={{textAlign: 'center'}}>
           <img src={Profile} style={{width: 140}}/>
         </Grid>

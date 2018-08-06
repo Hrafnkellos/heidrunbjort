@@ -60,3 +60,43 @@ p {
   font-size: 16px;
   border: none;
 }
+
+button {
+  cursor: pointer;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 50%;
+  margin: 10px 0;
+  background-color: #F3F3F3;
+  height: 30px;
+  font-family: 'Montserrat';
+  text-indent: 15px;
+  line-height: 25px;
+  border: #5c5c5c solid 1px;
+}
+
+.contact-form textarea {
+  height: 200px;
+}
+
+::placeholder {
+  color: #898989;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.white-button {
+  background-color: white;
+  border: #f47c7c solid 2px;
+  color: #f47c7c;
+  padding: 7px 40px;
+  font-family: Montserrat;
+  font-weight: 600;
+}
+
+.white-button:hover {
+  background-color: #FEE2E2;
+}

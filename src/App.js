@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
+import Footer from './Footer';
 import FrontPage from './FrontPage';
 import About from './About';
 import MyWork from './MyWork';
@@ -51,6 +52,7 @@ class App extends Component {
           <MyWork></MyWork>
           <Contact></Contact>
         </div>
+        <Footer></Footer>
         </MuiThemeProvider>
     </React.Fragment>
     );

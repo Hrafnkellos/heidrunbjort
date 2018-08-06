@@ -27,20 +27,23 @@ function CenteredGrid(props) {
         <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'Tinos', fontSize: 20, color: '#838383', fontStyle: 'italic'}}>
           Feel free to ask me anything or even offer me a job
         </Grid>
-        <Grid item xs={12} style={{textAlign: 'center'}}>
-          Name
-        </Grid>
-        <Grid item xs={12} style={{textAlign: 'center'}}>
-          Email
-        </Grid>
-        <Grid item xs={12} style={{textAlign: 'center'}}>
-          Subject
-        </Grid>
-        <Grid item xs={12} style={{textAlign: 'center'}}>
-          Say Something here...
-        </Grid>
-        <Grid item xs={12} style={{textAlign: 'center'}}>
-          <button>SEND</button>
+        <hr style= {{ border: 'none', height: 2, color: '#f47c7c', backgroundColor: '#f47c7c', width: 103 , marginBottom: 40}}/>
+        <Grid container className="contact-form">
+          <Grid item xs={12} style={{textAlign: 'center'}}>
+            <input type="text" placeholder="Name"></input>
+          </Grid>
+          <Grid item xs={12} style={{textAlign: 'center'}}>
+            <input type="text" placeholder="Email"></input>
+          </Grid>
+          <Grid item xs={12} style={{textAlign: 'center'}}>
+            <input type="text" placeholder="Subject"></input>
+          </Grid>
+          <Grid item xs={12} style={{textAlign: 'center'}}>
+            <textarea placeholder="Say Something here..."></textarea>
+          </Grid>
+          <Grid item xs={12} style={{textAlign: 'center'}}>
+            <button className="white-button">SEND</button>
+          </Grid>
         </Grid>
       </Grid>
     </div>
