@@ -35,7 +35,7 @@ function CenteredGrid(props) {
         </Grid>
         <Grid  item xs={1}>
         </Grid>
-        <Grid item xs={5} style={{fontFamily: 'Montserrat'}}>
+        <Grid item xs={5}>
           <p>
             My name is Heiðrún Björt and I come from Iceland. I live in
             my apartment in Hafnarfjörður with my man, Hrafnkell,
@@ -48,7 +48,7 @@ function CenteredGrid(props) {
             Sketch, Indesign, Photoshop, Illustrator, Invision and more.
           </p>
         </Grid>
-        <Grid item xs={5} style={{fontFamily: 'Montserrat'}}>
+        <Grid item xs={5}>
           <p>
             I've worked at various places as a graphic media designer,
             at a media, advertisement agency and a small printing

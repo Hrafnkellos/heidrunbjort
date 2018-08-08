@@ -15,11 +15,12 @@ const styles = theme => ({
     flexGrow: 1,
     marginTop: 50,
   },
-  paper: {
-    padding: theme.spacing.unit * 2,
+  heading: {
     textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
+    fontFamily: 'LemonMilk',
+    fontSize: 35,
+    color: '#f47c7c'
+  }
 });
 
 function CenteredGrid(props) {
@@ -64,7 +65,7 @@ function CenteredGrid(props) {
   return (
     <div id="work" className={classes.root}>
       <Grid container spacing={24}>
-        <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'LemonMilk', fontSize: 35, color: '#f47c7c'}}>
+        <Grid item xs={12} className={classes.heading}>
           MY WORK
         </Grid>
         <Grid item xs={12} style={{textAlign: 'center', fontFamily: 'Tinos', fontSize: 20, color: '#838383', fontStyle: 'italic'}}>

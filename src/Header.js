@@ -11,6 +11,7 @@ const styles = {
     flexGrow: 1,
     position: 'fixed',
     width: '100%',
+    top: 0,
   },
   appBar: {
     boxShadow: 'none'
@@ -24,7 +25,7 @@ function HeidrunAppBar(props) {
       <AppBar position="static" className={classes.appBar}>
         <Toolbar>
           <Typography variant="title" className="menu" color="inherit" style={{margin: '0 auto', fontSize: 15, color: '#605f5f'}}>
-            <a href="#work">WORK</a> // <a href="#about">ABOUT</a> // <a href="#contact">CONTACT</a>
+            <a href="/#work">WORK</a> // <a href="/#about">ABOUT</a> // <a href="/#contact">CONTACT</a>
           </Typography>
         </Toolbar>
       </AppBar>

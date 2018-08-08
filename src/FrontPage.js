@@ -8,11 +8,6 @@ const styles = theme => ({
   root: {
     flexGrow: 1,
   },
-  paper: {
-    padding: theme.spacing.unit * 2,
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
   heart: {
     height: 'calc(100vh - 64px)',
     width: '100%',

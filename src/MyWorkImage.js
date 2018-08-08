@@ -2,14 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import { Link } from "react-router-dom";
 
 const styles = theme => ({
   root: {
     position: 'relative',
-    cursor: 'pointer',
   },
   image: {
     width: 360,
+    cursor: 'pointer',
   },
   overlay: {
     position: 'absolute',
@@ -50,11 +51,13 @@ function MyWorkImage(props) {
 
   return (
     <Grid item xs={4} className={classes.root}>
-      <img src={img} className={classes.image}/>
-      <div className={classes.overlay}>
-        <div className={classes.headingText}>{headingText}</div>
-        <div className={classes.subText}>{subText}</div>
-      </div>
+      <Link to={`/work/${headingText}`}>
+        <img src={img} className={classes.image}/>
+        <div className={classes.overlay}>
+          <div className={classes.headingText}>{headingText}</div>
+          <div className={classes.subText}>{subText}</div>
+        </div>
+      </Link>
     </Grid>
   );
 }
