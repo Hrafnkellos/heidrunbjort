@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Header from './Header';
 import Footer from './Footer';
 import FrontPage from './FrontPage';
@@ -40,20 +41,22 @@ const theme = createMuiTheme({
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
-        <MuiThemeProvider theme={theme}>
-        <CssBaseline />
-        <Header></Header>
-        <Logo></Logo>
-        <div style={{maxWidth: 1138, margin: '0 auto'}}>
-          <FrontPage></FrontPage>
-          <About></About>
-          <MyWork></MyWork>
-          <Contact></Contact>
-        </div>
-        <Footer></Footer>
-        </MuiThemeProvider>
-    </React.Fragment>
+      <Router>
+        <React.Fragment>
+          <MuiThemeProvider theme={theme}>
+          <CssBaseline />
+          <Header></Header>
+          <Logo></Logo>
+          <div style={{maxWidth: 1138, margin: '0 auto'}}>
+            <FrontPage></FrontPage>
+            <About></About>
+            <MyWork></MyWork>
+            <Contact></Contact>
+          </div>
+          <Footer></Footer>
+          </MuiThemeProvider>
+      </React.Fragment>
+    </Router>
     );
   }
 }
