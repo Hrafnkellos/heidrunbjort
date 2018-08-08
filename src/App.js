@@ -10,6 +10,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import './App.css';
 import Logo from './Logo';
+import Work from './WorkPage';
 
 const theme = createMuiTheme({
   palette: {
@@ -48,10 +49,15 @@ class App extends Component {
           <Header></Header>
           <Logo></Logo>
           <div style={{maxWidth: 1138, margin: '0 auto'}}>
-            <FrontPage></FrontPage>
-            <About></About>
-            <MyWork></MyWork>
-            <Contact></Contact>
+            <Route exact path={'/'} render={() => (
+              <div>
+                <FrontPage></FrontPage>
+                <About></About>
+                <MyWork></MyWork>
+                <Contact></Contact>
+              </div>
+            )}/>
+            <Route path={`/work/:workId`} component={Work}/>
           </div>
           <Footer></Footer>
           </MuiThemeProvider>

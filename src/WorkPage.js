@@ -4,15 +4,18 @@ import { withStyles } from '@material-ui/core/styles';
 
 const styles = () => ({
   root: {
+    minHeight: '85vh'
   },
 });
 
 class WorkPage extends Component {
   render() {
 
-    const { classes } = this.props;
+    const { classes, match } = this.props;
     return (
       <div className={classes.root}>
+        <div>{match.url}</div>
+        <div>{match.params.workId}</div>
       </div>
     );
   }

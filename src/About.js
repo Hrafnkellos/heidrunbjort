@@ -64,7 +64,7 @@ function CenteredGrid(props) {
         <Grid item xs={12} style={{textAlign: 'center'}}>
           <img src={Signature} style={{width: 285}}/>
         </Grid>
-        <Grid container xs={12} style={{justifyContent: 'center'}}>
+        <Grid container style={{justifyContent: 'center'}}>
           <Grid item xs={2} style={{margin: '0 15px'}}>
             <button className="pink-button">MY RESUME</button>
           </Grid>

@@ -75,10 +75,10 @@ function CenteredGrid(props) {
         </Grid>
         {
           imageData.projects.map(data =>
-            <MyWorkImage img={data.img} headingText={data.name} subText={data.description}/>
+            <MyWorkImage key={data.name} img={data.img} headingText={data.name} subText={data.description}/>
           )
         }
-        <Grid container xs={12} style={{justifyContent: 'center'}}>
+        <Grid container style={{justifyContent: 'center'}}>
           <Grid item xs={3} style={{margin: '25px 15px'}}>
             <a href="https://dribbble.com/heidrunbjort" target="blank"><button className="red-button">MY DRIBBLE ACCOUNT</button></a>
           </Grid>
