@@ -100,3 +100,32 @@ textarea:focus, input:focus{
 .white-button:hover {
   background-color: #FEE2E2;
 }
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( 1 );
+  }
+  25%
+  {
+    transform: scale( 0.97 );
+  }
+  50%
+  {
+    transform: scale( 1 );
+  }
+  75%
+  {
+    transform: scale( 0.97 );
+  }
+  100%
+  {
+    transform: scale( 1 );
+  }
+}
+
+.heart-container > div.animate
+{
+  animation: heartbeat 2.5s infinite;
+}

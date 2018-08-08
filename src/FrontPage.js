@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Heart from './media/hjarta.png';
 
@@ -26,21 +25,38 @@ const styles = theme => ({
   },
 });
 
-function CenteredGrid(props) {
-  const { classes } = props;
+class FrontPage extends Component {
 
-  return (
-    <div className={classes.root}>
-      <Grid container spacing={24}>
-        <div className={classes.heart}></div>
-        {/* <img src={Heart}/> */}
-      </Grid>
-    </div>
-  );
+  constructor(props) {
+    super(props);
+    this.state = {
+      isHovered: false
+    }
+    this.handleHover = this.handleHover.bind(this);
+  }
+
+  handleHover(){
+    this.setState({
+      isHovered: !this.state.isHovered
+    });
+  }
+
+  render() {
+    const { classes } = this.props;
+    const hoverClass = this.state.isHovered ? " animate" : "";
+
+    return (
+      <div className={classes.root}>
+        <Grid container spacing={24} className="heart-container">
+          <div className={classes.heart + hoverClass} onMouseEnter={this.handleHover} onMouseLeave={this.handleHover}></div>
+        </Grid>
+      </div>
+    );
+  }
 }
 
-CenteredGrid.propTypes = {
+FrontPage.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(CenteredGrid);
+export default withStyles(styles)(FrontPage);
