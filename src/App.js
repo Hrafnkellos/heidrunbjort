@@ -8,9 +8,7 @@ import Contact from './Contact';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import './App.css';
-// import 'typeface-montserrat';
-// import 'typeface-tinos';
-// import './media/LemonMilk.woff';
+import Logo from './Logo';
 
 const theme = createMuiTheme({
   palette: {
@@ -46,6 +44,7 @@ class App extends Component {
         <MuiThemeProvider theme={theme}>
         <CssBaseline />
         <Header></Header>
+        <Logo></Logo>
         <div style={{maxWidth: 1138, margin: '0 auto'}}>
           <FrontPage></FrontPage>
           <About></About>
