@@ -6,7 +6,6 @@ import Banner from './media/Amarayoga/amarayoga.png';
 import Screen from './media/Amarayoga/Amarayoga_comp.png';
 import Design from './media/Amarayoga/amarayogaforsida.png';
 
-
 const styles = () => ({
   root: {
     minHeight: '85vh',

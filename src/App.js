@@ -10,7 +10,16 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import './App.css';
 import Logo from './Logo';
-import Work from './WorkPage';
+import Work from './WorkPage/WorkPage';
+import Work1 from './media/work1.png';
+import Work2 from './media/work3.png';
+import Work3 from './media/work2.png';
+import Work4 from './media/work4.png';
+import Work5 from './media/work5.png';
+import Work6 from './media/work6.png';
+import Banner from './media/Amarayoga/amarayoga.png';
+import Screen from './media/Amarayoga/Amarayoga_comp.png';
+import Design from './media/Amarayoga/amarayogaforsida.png';
 
 const theme = createMuiTheme({
   palette: {
@@ -39,6 +48,44 @@ const theme = createMuiTheme({
   }
 });
 
+const imageData = {
+  projects: [
+    {
+      name: 'Amarayoga',
+      description: 'desktop, hobby project',
+      img: Work1,
+      banner: Banner,
+      screen: Screen,
+      design: Design,
+    },
+    {
+      name:'TouringIceland',
+      description:'desktop and mobile, school project',
+      img: Work2,
+    },
+    {
+      name:'Dashboard',
+      description:'desktop, school project',
+      img: Work3,
+    },
+    {
+      name:'Travelf',
+      description:'mobile, travel hackathon',
+      img: Work4,
+    },
+    {
+      name:'Fjallraven',
+      description:'desktop, school project',
+      img: Work5,
+    },
+    {
+      name:'Reykjavík',
+      description:'desktop, school project',
+      img: Work6,
+    },
+  ]
+}
+
 class App extends Component {
   render() {
     return (
@@ -53,7 +100,7 @@ class App extends Component {
               <div>
                 <FrontPage></FrontPage>
                 <About></About>
-                <MyWork></MyWork>
+                <MyWork work={imageData}></MyWork>
                 <Contact></Contact>
               </div>
             )}/>
