@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import Banner from './media/Amarayoga/amarayoga.png';
-import Screen from './media/Amarayoga/Amarayoga_comp.png';
-import Design from './media/Amarayoga/amarayogaforsida.png';
+import Banner from '../media/Amarayoga/amarayoga.png';
+import Screen from '../media/Amarayoga/Amarayoga_comp.png';
+import Design from '../media/Amarayoga/amarayogaforsida.png';
 
 const styles = () => ({
   root: {
@@ -41,7 +41,9 @@ const styles = () => ({
 class WorkPage extends Component {
 
   render() {
-    const { classes, match } = this.props;
+    const { classes, match, work } = this.props;
+    const workItem = work.projects.find(x => x.name == match.params.workId);
+
     return (
       <div>
         <Grid container spacing={24} className={classes.root} justify="center">
@@ -81,8 +83,6 @@ class WorkPage extends Component {
           <img src={Design} style={{width: '100%'}}/>
           </Grid>
         </Grid>
-        {/* <div>{match.url}</div>
-        <div>{match.params.workId}</div> */}
       </div>
     );
   }
@@ -90,6 +90,8 @@ class WorkPage extends Component {
 
 WorkPage.propTypes = {
   classes: PropTypes.object.isRequired,
+  work: PropTypes.object.isRequired,
+  match: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(WorkPage);

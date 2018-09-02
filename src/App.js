@@ -104,7 +104,10 @@ class App extends Component {
                 <Contact></Contact>
               </div>
             )}/>
-            <Route path={`/work/:workId`} component={Work}/>
+            <Route path={`/work/:workId`} //component={Work} work={imageData}/>
+              render={props =>
+                <Work {...props} work={imageData}/>
+              }/>
           </div>
           <Footer></Footer>
           </MuiThemeProvider>
