@@ -4,12 +4,12 @@
   "description": "Heidrun Bjorts Portfolio Website",
   "main": "public/index.js",
   "dependencies": {
-    "@material-ui/core": "^1.4.2",
+    "@material-ui/core": "3.9.2",
     "npm": "^6.3.0",
-    "react": "^16.4.1",
+    "react": "16.8.4",
     "react-dom": "^16.4.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
+    "react-router-dom": "5.0.0",
+    "react-scripts": "2.1.8",
     "typeface-montserrat": "^0.0.54",
     "typeface-roboto": "^0.0.54",
     "typeface-tinos": "^0.0.54"
@@ -30,5 +30,11 @@
   "bugs": {
     "url": "https://github.com/Hrafnkellos/heidrunbjort/issues"
   },
-  "homepage": "https://heidrunbjortsig.firebaseapp.com/"
+  "homepage": "https://heidrunbjortsig.firebaseapp.com/",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
